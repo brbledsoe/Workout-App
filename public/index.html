@@ -30,11 +30,12 @@
           <input class="wo-type-input hidden" placeholder="type of workout">
         </div>
 
-        <div class="wo-wrap col-sm-6 col-sm-offset-3 hidden">
+        <div class="wo-wrap col-sm-6 col-sm-offset-3 ">
           <!-- add in the future edit mode -->
-          <p class="wo-type edit-mode"></p>
-          <ul class="ex-list">
+          <h3 class="wo-type edit-mode">Chest</h3>
+          <ul class="ex-list list-unstyled">
 
+        
           </ul>
 
           <div class="form-group">
@@ -47,27 +48,41 @@
       </div>
     </section>
 
-   <!--  <section class="container">
-      <div class="row">
-        <a href="#">
-          <div class='col-sm-6 col-sm-offset-3'>LAST WEEK</div>
-        </a>
-      </div>
-    </section>
+    <!-- Exercise Template/Append in ul ex-list w tagName:li -->
+    <script id="new-ex-template" type="text/x-handlebars-template">
 
-    <section class="container">
-      <div class="row">
-        <a href="#">
-          <div class='col-sm-6 col-sm-offset-3'>PROGRESS</div>
-        </a>
+      <h4 class="ex-output"></h4>
+      <input class="ex-input">
+      <div>
+        <button>
+        <i class="fa fa-plus"></i> set 
+        </button>
       </div>
-    </section> -->
 
+    </script>
+
+    <!-- Set Template/Append on div above EX-Temp-Button-->
+    <script id="new-set-template" type="text/x-handlebars-template">
+
+      <div>
+        <h4 class="set-output-weight"><span>lbs</span></h4>
+        <input class="set-input-weight">
+      </div>
+
+      <div>
+        <h4 class="set-output-reps"><span>times</span></h4>
+        <input class="set-input-reps">
+      </div>
+
+    </script> 
 
     <script src="models/WoModel.js"></script>
     <script src="collections/WoCollection.js"></script>
     <script src="models/AppModel.js"></script>
     <script src="views/AppView.js"></script>
+    <script src="models/ExModel.js"></script>
+    <script src="collections/ExCollection.js"></script>
+    <script src="views/ExView.js"></script>
     <script src="main.js"></script>
   </body>
 </html>

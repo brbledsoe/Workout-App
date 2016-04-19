@@ -1,9 +1,15 @@
 var WoModel = Backbone.Model.extend({
-  defaults: {
-    type: '',
-    name: '',
-    date: '',
-    total_reps: 0,
-    total_weight: 0
+  defaults: function () {
+    return {
+      type: '',
+      date: '',
+      exercises: new ExCollection()
+    }
+  },
+
+  parse: function(response) {
+    response.id = response._id;
+    response.exercises = this.get('exercises') || new ExCollection();
+    return response;
   }
 });

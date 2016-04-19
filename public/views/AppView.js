@@ -2,13 +2,17 @@ var AppView = Backbone.View.extend({
   el: $('section'),
 
   events: {
-    'click .day-and-type': 'createType',
-    'keypress .wo-type-input': 'addType'
+    'click .day-and-type': 'createType'
+    // 'keypress .wo-type-input': 'addType'
+  },
+
+  initialize: function () {
+    
   },
 
   createType: function(e) {
     $('.day-and-type').hide();
-    $('.wo-type-input').toggleClass('hidden');
+    $('.wo-type-input').removeClass('hidden');
   },
 
   addType: function(e) {
@@ -18,6 +22,7 @@ var AppView = Backbone.View.extend({
       // need to change a createType func to be more useful
       $('.day-and-type').show();
       $('.wo-type-input').toggleClass('hidden');
+      $('.day-and-type').off('click');
     }
   }
 
