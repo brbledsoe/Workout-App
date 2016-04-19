@@ -15,10 +15,10 @@
   <body>
 
 
-    <section class="container">
+    <section class="container-fluid">
       <div class="row">
 
-        <div class="col-sm-6 col-sm-offset-3">
+        <div class="col-xs-12">
           <p class="day-and-type">TODAY</p>
           <input class="wo-type-input hidden" placeholder="type of workout">
         </div>
@@ -35,42 +35,43 @@
               
 
                 <!-- second TEMPLATE -->
-                <div class="row">
-
+              
                    
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="set">
 
-                  <div class="set col-xs-10 col-xs-offset-1">
+                      <div class="set-wrap row">
+                        <div class="col-xs-5">
+                          <h3 class="set-output-weight">40 <span>lbs</span></h3>
+                        <!-- <input class="set-input-weight"> -->
+                        </div>
 
-                    <div class="set-wrap">
-                      <div class="col-xs-5">
-                        <h3 class="set-output-weight">40 <span>lbs</span></h3>
-                      <!-- <input class="set-input-weight"> -->
+                        <div class="col-xs-7">
+                          <h3 class="set-output-reps">12 <span>times</span></h3>
+                            <!-- <input class="set-input-reps"> -->
+                        </div>
                       </div>
 
-                      <div class="col-xs-7">
-                        <h3 class="set-output-reps">12 <span>times</span></h3>
-                          <!-- <input class="set-input-reps"> -->
+                      <div class="set-wrap row">
+                        <div class="col-xs-5">
+                          <h3 class="set-output-weight">40 <span>lbs</span></h3>
+                        <!-- <input class="set-input-weight"> -->
+                        </div>
+
+                        <div class="col-xs-7">
+                          <h3 class="set-output-reps">12 <span>times</span></h3>
+                            <!-- <input class="set-input-reps"> -->
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <button class="col-xs-12"><i class="fa fa-plus"></i> set </button>
                       </div>
                     </div>
-                    
-
-                    <div class="set-wrap">
-                      <div class="col-xs-5">
-                        <h3 class="set-output-weight">40 <span>lbs</span></h3>
-                      <!-- <input class="set-input-weight"> -->
-                      </div>
-
-                      <div class="col-xs-7">
-                        <h3 class="set-output-reps">12 <span>times</span></h3>
-                          <!-- <input class="set-input-reps"> -->
-                      </div>
-                    </div>
-                    
-                      <button class="col-xs-12">
-                        <i class="fa fa-plus"></i> set 
-                      </button>
                   </div>  
                 </div>
+            
 
               
             </li>
@@ -90,30 +91,30 @@
     <!-- Exercise Template/Append to ul class="ex-list" w tagName:li -->
     <script id="new-ex-template" type="text/x-handlebars-template">
 
-      <h2 class="ex-output">Bench Press</h2>
-      <input class="ex-input">
       <div class="row">
-        <div class="set col-xs-10 col-xs-offset-1">
-          <button class="col-xs-12">
-              <i class="fa fa-plus"></i> set 
-          </button>
+        <div class="col-xs-12">
+          <div class="set">
+            <div class="row">
+              <button class="col-xs-12"><i class="fa fa-plus"></i> set </button>
+            </div>
+          </div>
         </div>  
       </div>
       
     </script>
 
-    <!-- Set Template/Append to class='set' but ontop of button-->
+    <!-- Set Template/Append to class='set' but on top of button (row wrapper)-->
     <script id="new-set-template" type="text/x-handlebars-template">
 
-      <div class="set-wrap">
+      <div class="set-wrap row">
         <div class="col-xs-5">
           <h3 class="set-output-weight">40 <span>lbs</span></h3>
-          <input class="set-input-weight">
+        <!-- <input class="set-input-weight"> -->
         </div>
 
         <div class="col-xs-7">
           <h3 class="set-output-reps">12 <span>times</span></h3>
-          <input class="set-input-reps">
+            <!-- <input class="set-input-reps"> -->
         </div>
       </div>
 
