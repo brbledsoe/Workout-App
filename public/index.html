@@ -13,8 +13,61 @@
 
   </head>
   <body>
-    
 
+    <!-- <header class="container">
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+          <h3>WORKOUT APP</h3>   
+        </div>
+      </div>
+    </header> -->
+
+    <section class="container">
+      <div class="row">
+
+        <div class="col-sm-6 col-sm-offset-3">
+          <p class="day-and-type">TODAY</p>
+          <input class="wo-type-input hidden" placeholder="type of workout">
+        </div>
+
+        <div class="wo-wrap col-sm-6 col-sm-offset-3 hidden">
+          <!-- add in the future edit mode -->
+          <p class="wo-type edit-mode"></p>
+          <ul class="ex-list">
+
+          </ul>
+
+          <div class="form-group">
+            <!-- <input class="form-control ex-input" placeholder="enter your exercise"> -->
+
+          </div>
+          <button class="btn btn-info"><i class="fa fa-plus"></i> Exercise</button>
+        </div>
+
+      </div>
+    </section>
+
+   <!--  <section class="container">
+      <div class="row">
+        <a href="#">
+          <div class='col-sm-6 col-sm-offset-3'>LAST WEEK</div>
+        </a>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="row">
+        <a href="#">
+          <div class='col-sm-6 col-sm-offset-3'>PROGRESS</div>
+        </a>
+      </div>
+    </section> -->
+
+
+    <script src="models/WoModel.js"></script>
+    <script src="collections/WoCollection.js"></script>
+    <script src="models/AppModel.js"></script>
+    <script src="views/AppView.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
