@@ -3,13 +3,13 @@ var WoModel = Backbone.Model.extend({
     return {
       type: '',
       date: '',
-      exercises: new ExCollection()
+      exercises: []
     }
   },
 
   parse: function(response) {
     response.id = response._id;
-    response.exercises = this.get('exercises') || new ExCollection();
+    // response.exercises = this.get('exercises') || new ExCollection();
     return response;
   }
 });
