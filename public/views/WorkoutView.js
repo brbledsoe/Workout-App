@@ -3,7 +3,7 @@ var WorkoutView = Backbone.View.extend({
 
    template: Handlebars.compile($('#new-ex-template').html()),
 
-   events.: {
+   events: {
       'click #new-set': 'addSet'
    },
 

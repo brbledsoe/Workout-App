@@ -13,9 +13,6 @@
 
   </head>
   <body>
-    
-
-
     <section class="container-fluid">
       <div class="row">
 
@@ -26,7 +23,7 @@
 
         <div class="wo-wrap col-sm-7 hidden">
           <!-- add in the future edit mode -->
-          <h3 class="wo-type edit-mode">Chest</h3>
+          <h3 class="wo-type edit-mode"></h3>
           <ul class="ex-list list-unstyled">
             <!-- templates -->
           </ul>
@@ -44,13 +41,13 @@
 
       </div>
 
-        
+
     </section>
 
     <!-- Exercise Template/Append to ul class="ex-list" w tagName:li -->
     <script id="new-ex-template" type="text/x-handlebars-template">
 
-    <h2 class="ex-output">Bench Press</h2>
+      <h2 class="ex-output">Bench Press</h2>
       <div class="row">
         <div class="col-xs-12">
           <div class="set">
@@ -59,9 +56,9 @@
               <button class="col-xs-12" id="new-set-btn"><i class="fa fa-plus"></i> set </button>
             </div>
           </div>
-        </div>  
+        </div>
       </div>
-      
+
     </script>
 
     <!-- Set Template/Append to class='set' but on top of button (row wrapper)-->
@@ -79,14 +76,15 @@
         </div>
       </div>
 
-    </script> 
+    </script>
 
+    <script src="models/AppModel.js"></script>
+    <script src="models/ExModel.js"></script>
     <script src="models/WoModel.js"></script>
     <script src="collections/WoCollection.js"></script>
-    <script src="models/AppModel.js"></script>
-    <script src="views/AppView.js"></script>
-    <script src="models/ExModel.js"></script>
     <script src="collections/ExCollection.js"></script>
+    <script src="views/WorkoutView.js"></script>
+    <script src="views/AppView.js"></script>
     <script src="views/ExView.js"></script>
     <script src="main.js"></script>
   </body>
