@@ -14,11 +14,11 @@ var WorkoutView = Backbone.View.extend({
    },
 
    addSet: function (e) {
-      var view = new ExView({model: this.model});
-      $(e.target).closest('.set').prepend(view.render().el);
+      var view = new ExView({model: this.model  });
+      $(e.target).closest('.set').prepend(this.$el);
       $('.set-input-weight').focus();
    },
-
+   
    addWeight: function (e) {
      if (e.which === 13 && $('.set-input-weight').val() !== '') {
        $(e.target).siblings('.set-output-weight').html($(e.target).val() + ' lbs');
