@@ -9,12 +9,12 @@ var AppView = Backbone.View.extend({
 
   initialize: function () {
     this.$list = this.$('.ex-list');
-    this.listenTo(this.model, 'add', this.render);
   },
 
   toggleType: function(e) {
     $('.day-and-type').toggleClass('hidden');
     $('.wo-type-input').toggleClass('hidden');
+    $('.wo-type-input').focus();
   },
 
   addType: function(e) {
@@ -28,14 +28,13 @@ var AppView = Backbone.View.extend({
   },
 
   addExercise: function () {
-
-    console.log(this.model.toJSON());
+    console.log();
+    var view = new WorkoutView({model: this.model});
+    this.$list.prepend(view.render().el);
   },
 
-  render: function (woView) {
-    console.log(woView);
-    var view = new WorkoutView({model: woView});
-    this.$list.append(view.render().el);
+  render: function () {
+
   }
 
 
