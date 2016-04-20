@@ -28,12 +28,12 @@ var AppView = Backbone.View.extend({
   },
 
   addExercise: function () {
-    console.log();
-    var view = new WorkoutView({model: this.model});
+    var womodel = new WoModel();
+    var view = new WorkoutView({model: womodel});
     this.$list.prepend(view.render().el);
   },
 
-  render: function () {
+  render: function (workouts) {
 
   }
 
