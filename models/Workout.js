@@ -5,9 +5,8 @@ var Schema = mongoose.Schema;
 var workoutSchema = new Schema ({
   date: String,
   type: String,
-  name: String, 
-  total_reps: Number,
-  total_weight: Number
+
+  exercises: []
 });
 
 var WorkOut = mongoose.model('WorkOut', workoutSchema);
