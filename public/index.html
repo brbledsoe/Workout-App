@@ -14,18 +14,11 @@
   </head>
   <body>
 
-    <!-- <header class="container">
-      <div class="row">
-        <div class="col-sm-6 col-sm-offset-3">
-          <h3>WORKOUT APP</h3>   
-        </div>
-      </div>
-    </header> -->
 
-    <section class="container">
+    <section class="container-fluid">
       <div class="row">
 
-        <div class="col-sm-6 col-sm-offset-3">
+        <div class="col-xs-12">
           <p class="day-and-type">TODAY</p>
           <input class="wo-type-input hidden" placeholder="type of workout">
         </div>
@@ -35,6 +28,53 @@
           <h3 class="wo-type edit-mode">Chest</h3>
           <ul class="ex-list list-unstyled">
 
+             <!--   first TEMPLATE -->
+            <li>
+              <h2 class="ex-output">Bench Press</h2>
+              <!-- <input class="ex-input"> -->
+              
+
+                <!-- second TEMPLATE -->
+              
+                   
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="set">
+
+                      <div class="set-wrap row">
+                        <div class="col-xs-5">
+                          <h3 class="set-output-weight">40 <span>lbs</span></h3>
+                        <!-- <input class="set-input-weight"> -->
+                        </div>
+
+                        <div class="col-xs-7">
+                          <h3 class="set-output-reps">12 <span>times</span></h3>
+                            <!-- <input class="set-input-reps"> -->
+                        </div>
+                      </div>
+
+                      <div class="set-wrap row">
+                        <div class="col-xs-5">
+                          <h3 class="set-output-weight">40 <span>lbs</span></h3>
+                        <!-- <input class="set-input-weight"> -->
+                        </div>
+
+                        <div class="col-xs-7">
+                          <h3 class="set-output-reps">12 <span>times</span></h3>
+                            <!-- <input class="set-input-reps"> -->
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <button class="col-xs-12"><i class="fa fa-plus"></i> set </button>
+                      </div>
+                    </div>
+                  </div>  
+                </div>
+            
+
+              
+            </li>
         
           </ul>
 
@@ -42,36 +82,40 @@
             <!-- <input class="form-control ex-input" placeholder="enter your exercise"> -->
 
           </div>
-          <button class="btn btn-info"><i class="fa fa-plus"></i> Exercise</button>
+          <button class="btn btn-info col-xs-12 add-ex"><i class="fa fa-plus"></i> Exercise</button>
         </div>
 
       </div>
     </section>
 
-    <!-- Exercise Template/Append in ul ex-list w tagName:li -->
+    <!-- Exercise Template/Append to ul class="ex-list" w tagName:li -->
     <script id="new-ex-template" type="text/x-handlebars-template">
 
-      <h4 class="ex-output"></h4>
-      <input class="ex-input">
-      <div>
-        <button>
-        <i class="fa fa-plus"></i> set 
-        </button>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="set">
+            <div class="row">
+              <button class="col-xs-12"><i class="fa fa-plus"></i> set </button>
+            </div>
+          </div>
+        </div>  
       </div>
-
+      
     </script>
 
-    <!-- Set Template/Append on div above EX-Temp-Button-->
+    <!-- Set Template/Append to class='set' but on top of button (row wrapper)-->
     <script id="new-set-template" type="text/x-handlebars-template">
 
-      <div>
-        <h4 class="set-output-weight"><span>lbs</span></h4>
-        <input class="set-input-weight">
-      </div>
+      <div class="set-wrap row">
+        <div class="col-xs-5">
+          <h3 class="set-output-weight">40 <span>lbs</span></h3>
+        <!-- <input class="set-input-weight"> -->
+        </div>
 
-      <div>
-        <h4 class="set-output-reps"><span>times</span></h4>
-        <input class="set-input-reps">
+        <div class="col-xs-7">
+          <h3 class="set-output-reps">12 <span>times</span></h3>
+            <!-- <input class="set-input-reps"> -->
+        </div>
       </div>
 
     </script> 
