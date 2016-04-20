@@ -6,14 +6,14 @@ var WoModel = Backbone.Model.extend({
       exercises: []
     }
   },
-  
+
   initialize: function () {
-    this.set('comments', new ExCollection())
+    this.set('exercises', new ExCollection());
   },
 
   parse: function(response) {
     response.id = response._id;
-    response.exercises = this.get('exercises') || new ExCollection();
+    // response.exercises = this.get('exercises') || new ExCollection();
     return response;
   }
 });
