@@ -1,0 +1,65 @@
+.set{
+  margin: 0 37px;
+  
+}
+
+.set div:nth-child(1){
+  border: 1px solid black;
+  border-right: 0;
+  background-color: white;
+}
+
+.set div:nth-child(2){
+  border: 1px solid;
+  background-color: white;
+}
+
+.set-wrap .col-xs-5{
+  height: 54px;
+  padding-top: 5px;
+  
+}
+
+.set-wrap .col-xs-7{
+  height: 54px;
+  padding-top: 5px;
+  
+}
+
+.set button{
+  font-size: 24px;
+  height: 59px;
+}
+
+h3{
+  line-height: 0;
+  text-align: center;
+}
+
+
+li{
+  overflow: hidden;
+  background-color: grey;
+  border-radius: 4px;
+  padding-bottom: 23px;
+  
+}
+
+li h2{
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 1px;
+
+}
+
+.add-ex{
+  height: 75px;
+  font-size: 30px;
+}
+
+
+
+
+
+
+
