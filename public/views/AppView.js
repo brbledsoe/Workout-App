@@ -4,6 +4,7 @@ var AppView = Backbone.View.extend({
   events: {
     'click .day-and-type': 'createType',
     'keypress .wo-type-input': 'addType'
+   //  'click #add-exercise': ''
   },
 
   initialize: function () {
