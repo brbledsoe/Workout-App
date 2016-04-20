@@ -54,6 +54,7 @@
     <script id="new-ex-template" type="text/x-handlebars-template">
 
       <h2 class="ex-output">Bench Press</h2>
+      <input class="ex-input">
       <div class="row">
         <div class="col-xs-12">
           <div class="set">
@@ -73,20 +74,20 @@
 
         <div class="col-xs-5 set-col weight-col">
           <h3 class="set-output-weight hidden">Set Weight</h3>
-          <input class="set-input-weight">
+          <input class="set-input-weight" placeholder="lbs" style="font-size:24px">
         </div>
 
         <div class="col-xs-7 set-col rep-col">
           <h3 class="set-output-reps hidden">Set Reps</h3>
-          <input class="set-input-reps">
+          <input class="set-input-reps" placeholder="times" style="font-size:24px">
         </div>
 
 
     </script>
 
     <script src="models/AppModel.js"></script>
-    <script src="models/ExModel.js"></script>
     <script src="models/WoModel.js"></script>
+    <script src="models/ExModel.js"></script>
     <script src="collections/WoCollection.js"></script>
     <script src="collections/ExCollection.js"></script>
     <script src="views/WorkoutView.js"></script>
