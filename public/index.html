@@ -16,6 +16,71 @@
     
 
 
+    <section class="container-fluid">
+      <div class="row">
+
+        <div class="col-sm-7">
+          <p class="day-and-type">TODAY</p>
+          <input class="wo-type-input hidden" placeholder="type of workout">
+        </div>
+
+        <div class="wo-wrap col-sm-7 hidden">
+          <!-- add in the future edit mode -->
+          <h3 class="wo-type edit-mode">Chest</h3>
+          <ul class="ex-list list-unstyled">
+            <!-- templates -->
+          </ul>
+
+          <button class="btn btn-info col-xs-12 add-ex"><i class="fa fa-plus"></i> Exercise</button>
+        </div>
+
+        <div class="col-sm-7">
+          <p>LAST WEEK</p>
+        </div>
+
+        <div class="col-sm-7">
+          <p>PROGRESS</p>
+        </div>
+
+      </div>
+
+        
+    </section>
+
+    <!-- Exercise Template/Append to ul class="ex-list" w tagName:li -->
+    <script id="new-ex-template" type="text/x-handlebars-template">
+
+    <h2 class="ex-output">Bench Press</h2>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="set">
+
+            <div class="row">
+              <button class="col-xs-12" id="new-set-btn"><i class="fa fa-plus"></i> set </button>
+            </div>
+          </div>
+        </div>  
+      </div>
+      
+    </script>
+
+    <!-- Set Template/Append to class='set' but on top of button (row wrapper)-->
+    <script id="new-set-template" type="text/x-handlebars-template">
+
+      <div class="set-wrap row">
+        <div class="col-xs-5">
+          <h3 class="set-output-weight">Set Weight</h3>
+          <input class="set-input-weight">
+        </div>
+
+        <div class="col-xs-7">
+          <h3 class="set-output-reps">Set Reps</h3>
+          <input class="set-input-reps">
+        </div>
+      </div>
+
+    </script> 
+
     <script src="models/WoModel.js"></script>
     <script src="collections/WoCollection.js"></script>
     <script src="models/AppModel.js"></script>
