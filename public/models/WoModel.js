@@ -1,10 +1,8 @@
 var WoModel = Backbone.Model.extend({
-  defaults: function () {
-    return {
-      type: '',
-      date: '',
-      exercises: []
-    }
+  defaults: {
+    type: '',
+    date: '',
+    exercises: []
   },
 
   initialize: function () {
