@@ -13,10 +13,9 @@ var WorkoutView = Backbone.View.extend({
     //  console.log(this.model.get('workouts').toJSON());
    },
 
-   addSet: function () {
-     console.log(this.model.get('exercises'));
+   addSet: function (e) {
       var view = new ExView({model: this.model});
-      $('.set').prepend(view.render().el);
+      $(e.target).closest('.set').prepend(view.render().el);
       $('.set-input-weight').focus();
    },
 
@@ -25,7 +24,7 @@ var WorkoutView = Backbone.View.extend({
        $(e.target).siblings('.set-output-weight').html($(e.target).val() + ' lbs');
        $('.set-output-weight').removeClass('hidden');
        $(e.target).hide();
-       $('.set-input-reps').focus();       
+       $('.set-input-reps').focus();
      }
    },
 
