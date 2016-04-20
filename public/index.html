@@ -14,6 +14,16 @@
   </head>
   <body>
 
+<<<<<<< HEAD
+    <!-- <header class="container">
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+          <h3>WORKOUT APP</h3>
+        </div>
+      </div>
+    </header> -->
+=======
+>>>>>>> master
 
     <section class="container-fluid">
       <div class="row">
@@ -23,20 +33,15 @@
           <input class="wo-type-input hidden" placeholder="type of workout">
         </div>
 
-        <div class="wo-wrap col-sm-6 col-sm-offset-3 ">
+        <div class="wo-wrap col-sm-6 col-sm-offset-3 hidden">
           <!-- add in the future edit mode -->
           <h3 class="wo-type edit-mode">Chest</h3>
           <ul class="ex-list list-unstyled">
-
              <!--   first TEMPLATE -->
             <li>
               <h2 class="ex-output">Bench Press</h2>
               <!-- <input class="ex-input"> -->
-              
-
                 <!-- second TEMPLATE -->
-              
-                   
                 <div class="row">
                   <div class="col-xs-12">
                     <div class="set">
@@ -69,20 +74,18 @@
                         <button class="col-xs-12"><i class="fa fa-plus"></i> set </button>
                       </div>
                     </div>
-                  </div>  
+                  </div>
                 </div>
-            
-
-              
             </li>
-        
+
           </ul>
 
           <div class="form-group">
             <!-- <input class="form-control ex-input" placeholder="enter your exercise"> -->
 
           </div>
-          <button class="btn btn-info col-xs-12 add-ex"><i class="fa fa-plus"></i> Exercise</button>
+          <button class="btn btn-info col-xs-12 add-ex" id="add-exercise"><i class="fa fa-plus"></i> Exercise</button>
+
         </div>
 
       </div>
@@ -90,17 +93,14 @@
 
     <!-- Exercise Template/Append to ul class="ex-list" w tagName:li -->
     <script id="new-ex-template" type="text/x-handlebars-template">
-
       <div class="row">
         <div class="col-xs-12">
           <div class="set">
             <div class="row">
-              <button class="col-xs-12"><i class="fa fa-plus"></i> set </button>
+              <button class="col-xs-12" id="new-set"><i class="fa fa-plus"></i> set </button>
             </div>
           </div>
-        </div>  
-      </div>
-      
+        </div>
     </script>
 
     <!-- Set Template/Append to class='set' but on top of button (row wrapper)-->
@@ -118,7 +118,7 @@
         </div>
       </div>
 
-    </script> 
+    </script>
 
     <script src="models/WoModel.js"></script>
     <script src="collections/WoCollection.js"></script>
