@@ -2,8 +2,7 @@ var mongoose = require('mongoose');
 
 var exerciseSchema = new mongoose.Schema({
    name: String,
-   total_reps: Number,
-   total_weight: Number
+   sets: []
 });
 
 var Exercise = mongoose.model('Exercise', exerciseSchema);

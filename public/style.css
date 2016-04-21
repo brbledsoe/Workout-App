@@ -6,7 +6,7 @@
 
 .set{
   margin: 0 37px;
-  
+
 }
 
 .weight-col{
@@ -23,7 +23,7 @@
 .set-col{
   height: 54px;
   padding-top: 5px;
-  
+
 }
 
 .set-btn{
@@ -46,7 +46,7 @@ li{
   margin: 10px 0;
   max-height: 500px;
   transition: max-height 0.25s ease-in;
-  
+
 }
 
 .none{
@@ -56,7 +56,7 @@ li{
 .view{
   max-height: 74px;
   transition: max-height 0.15s ease-out;
-  
+
 }
 
 h2{
@@ -76,10 +76,10 @@ h2{
   font-size: 30px;
 }
 
-input{
+input {
   height: 42px;
   width: 100%;
-
+  font-size: 24px;
 }
 
 .ex-input{
@@ -108,13 +108,3 @@ input{
 .drop-down-color{
   color: black;
 }
-
-
-
-
-
-
-
-
-
-

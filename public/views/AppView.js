@@ -31,16 +31,5 @@ var AppView = Backbone.View.extend({
     var womodel = new WoModel();
     var view = new WorkoutView({model: womodel});
     this.$list.append(view.render().el);
-
-    // collapse all open exercises except the new exercise created on click
-    // todo: invoke the collapse function on all exercise li's
-    
-    // todo: invoke the open function on exercise closest to this button
-  },
-
-  render: function (workouts) {
-
   }
-
-
 });
