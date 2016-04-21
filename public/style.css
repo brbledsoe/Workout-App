@@ -29,6 +29,7 @@
 .set-btn{
   font-size: 24px;
   height: 59px;
+  margin-bottom: 22px;
 }
 
 h3{
@@ -41,8 +42,20 @@ li{
   overflow: hidden;
   background-color: grey;
   border-radius: 4px;
-  padding-bottom: 23px;
+  /*padding-bottom: 23px;*/
   margin: 10px 0;
+  max-height: 500px;
+  transition: max-height 0.25s ease-in;
+  
+}
+
+.none{
+  display: none;
+}
+
+.view{
+  max-height: 74px;
+  transition: max-height 0.15s ease-out;
   
 }
 
@@ -66,7 +79,36 @@ h2{
 input{
   height: 42px;
   width: 100%;
+
 }
+
+.ex-input{
+  margin: 13px 0;
+  height: 48px;
+  background-color: #DDD;
+  text-align: center;
+}
+
+.ex-wrap{
+  display: block;
+  margin: 0 auto;
+  padding: 0 3%;
+  font-size: 30px;
+
+}
+
+.drop-down-effect{
+  color: #DDD;
+}
+
+.light-grey{
+  background-color: #DDD;
+}
+
+.drop-down-color{
+  color: black;
+}
+
 
 
 

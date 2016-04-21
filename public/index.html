@@ -18,7 +18,7 @@
 
         <div class="col-sm-7">
           <p class="day-and-type">TODAY</p>
-          <input class="wo-type-input hidden" placeholder="type of workout">
+          <input class="wo-type-input hidden" placeholder="What Are You Working Today?">
         </div>
 
         <div class="wo-wrap col-sm-7 hidden">
@@ -52,15 +52,20 @@
 
     <!-- Exercise Template/Append to ul class="ex-list" w tagName:li -->
     <script id="new-ex-template" type="text/x-handlebars-template">
+      <div class="ex-wrap">
+        <h2 class="ex-output hidden"></h2>
+        <input class="ex-input" placeholder="Enter An Exercise!">
+      </div>
 
-      <h2 class="ex-output">Bench Press</h2>
-      <input class="ex-input">
       <div class="row">
         <div class="col-xs-12">
           <div class="set">
 
+          <div class="set-container">
+          </div>
+
             <div class="row">
-              <button class="col-xs-12 set-btn" id="new-set-btn"><i class="fa fa-plus"></i> set </button>
+              <button class="col-xs-12 set-btn hidden" id="new-set-btn"><i class="fa fa-plus"></i> set </button>
             </div>
           </div>
         </div>
